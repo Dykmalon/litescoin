@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import { FaChrome, FaGithub } from "react-icons/fa";
+import Menu from '../components/Menu'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,98 +17,114 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+        <Menu/>
+        <div className='main-div'>
+
+          <div className='hero'>
+            <div className='slider'>
+              <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <img src="/assets/1.png" className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src="/assets/2.png" className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src="/assets/3.png" className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src="/assets/4.png" className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src="/assets/5.png" className="d-block w-100" alt="..." />
+                  </div>
+                </div>
+
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Previous</span>
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <div className='hero-main-text'>
+              <h1>Litescribe Wallet</h1>
+              <h2>Open Source Chrome Extension for Litecoin Ordinals & LTC-20</h2>
+              <div>
+                <div className='points'>
+                  <div>
+                    <div className='mark-1' /> <div>Store and transfer your Ordinals NFTs</div>
+                  </div>
+                  <div>
+                    <div className='mark-2' /> <div>100% Open-source (GitHub)</div>
+                  </div>
+                  <div>
+                    <div className='mark-3' /> <div>Inscribe on-the-fly without running a fullnode</div>
+                  </div>
+                  <div>
+                    <div className='mark-4' /> <div>Store, mint and transfer LTC-20</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className='btn-group'>
+                <button> Download from Chrome Store <FaChrome /></button>
+                <button> Download from Github <FaGithub /></button>
+              </div>
+            </div>
+
+            <div className='bg' />
+
           </div>
-        </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
+          <div className='faqs'>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
+              <h1>Frequently Asked Questions</h1>
+            <div className='faqs-div'>
 
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
+              <div className="accordion accordion-flush" id="accordionFlushExample">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="flush-headingOne">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    What is Litescribe?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div className="accordion-body"> is a service that allows users to inscribe data onto the Litecoin blockchain using the Ordinal Protocol. Litescribe uses the same principles and rules of the Ordinal Protocol but applies them specifically to the Litecoin network instead of Bitcoin.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="flush-headingTwo">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    What is Litescribe?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div className="accordion-body"> is a service that allows users to inscribe data onto the Litecoin blockchain using the Ordinal Protocol. Litescribe uses the same principles and rules of the Ordinal Protocol but applies them specifically to the Litecoin network instead of Bitcoin.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="flush-headingThree">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    What is Litescribe?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div className="accordion-body"> is a service that allows users to inscribe data onto the Litecoin blockchain using the Ordinal Protocol. Litescribe uses the same principles and rules of the Ordinal Protocol but applies them specifically to the Litecoin network instead of Bitcoin.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+          </div>
         </div>
       </main>
     </>
