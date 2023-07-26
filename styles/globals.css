@@ -115,7 +115,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 900px;
   justify-content: center;
   position: relative;
 }
@@ -188,8 +188,8 @@ a {
   align-items: center;
   column-gap: 10px;
   position: absolute;
-  top: 5vw;
-  left: 14%;
+  top: 11%;
+  left: 3%;
 }
 
 .points>div:nth-child(2) {
@@ -202,8 +202,8 @@ a {
   align-items: center;
   column-gap: 10px;
   position: absolute;
-  top: 9vw;
-  right: 18%;
+  top: 15%;
+  right: 10%;
 }
 
 .points>div:nth-child(3) {
@@ -216,8 +216,8 @@ a {
   align-items: center;
   column-gap: 10px;
   position: absolute;
-  top: 23vw;
-  left: 5%;
+  left: 0%;
+  bottom: 47%;
 }
 
 .points>div:nth-child(4) {
@@ -230,8 +230,8 @@ a {
   align-items: center;
   column-gap: 10px;
   position: absolute;
-  top: 21vw;
-  right: 10%;
+  top: 50%;
+  right: 4%;
 }
 
 .mark-1 {
@@ -402,7 +402,7 @@ a {
 .menu-main{
   position: absolute;
   top: 18px;
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -436,5 +436,58 @@ a {
 
   font-weight: 900;
   font-family: 'GeneralSansSemiBold';
+
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for mobile devices */
+
+  .points>div:nth-child(1) {
+
+    position: static;
+  
+  }
+  .points>div:nth-child(2) {
+
+    position: static;
+  
+  }
+  .points>div:nth-child(3) {
+
+    position: static;
+  
+  }
+  .points>div:nth-child(4) {
+
+    position: static;
+  
+  }
+
+  .hero-main-text{
+    width: 100%;
+  }
+
+  .hero-main-text h2{
+    margin-bottom: 1em;
+  }
+
+  .points{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .btn-group{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+  
+  .hero{
+    height: auto;
+  }
 
 }
