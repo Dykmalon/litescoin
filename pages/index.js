@@ -121,6 +121,50 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="flush-headingFour">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    What is Litescribe?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" className="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div className="accordion-body"> is a service that allows users to inscribe data onto the Litecoin blockchain using the Ordinal Protocol. Litescribe uses the same principles and rules of the Ordinal Protocol but applies them specifically to the Litecoin network instead of Bitcoin.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="flush-headingFive">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    What is Litescribe?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" className="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div className="accordion-body"> is a service that allows users to inscribe data onto the Litecoin blockchain using the Ordinal Protocol. Litescribe uses the same principles and rules of the Ordinal Protocol but applies them specifically to the Litecoin network instead of Bitcoin.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="flush-headingSix">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    What is Litescribe?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSix" className="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                    <div className="accordion-body"> is a service that allows users to inscribe data onto the Litecoin blockchain using the Ordinal Protocol. Litescribe uses the same principles and rules of the Ordinal Protocol but applies them specifically to the Litecoin network instead of Bitcoin.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="flush-headingSeven">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    What is Litescribe?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSeven" className="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                    <div className="accordion-body"> is a service that allows users to inscribe data onto the Litecoin blockchain using the Ordinal Protocol. Litescribe uses the same principles and rules of the Ordinal Protocol but applies them specifically to the Litecoin network instead of Bitcoin.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -128,7 +172,7 @@ export default function Home() {
 
           <div className='footer'>
             <div>litescribe</div>
-            <div>All rights reserved</div>
+            <div>© All rights reserved.</div>
 
           </div>
         </div>

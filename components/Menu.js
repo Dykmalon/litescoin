@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaWallet, FaSearch } from "react-icons/fa";
+import { FaWallet, FaSearch,FaPencilAlt } from "react-icons/fa";
 import { PiBracketsCurlyBold } from "react-icons/pi";
 
 
@@ -10,7 +10,7 @@ export default function Menu() {
 
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">LITECOIN</a>
+                    <a className="navbar-brand" href="#"><img src="/assets/litescoin.png"/></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -18,8 +18,8 @@ export default function Menu() {
                         <div className="navbar-nav">
                             <a className="nav-link active" aria-current="page" href="#"><FaWallet />Wallet</a>
                             <a className="nav-link" href="#"><FaSearch />Search</a>
-                            <a className="nav-link" href="#"><PiBracketsCurlyBold />Inscribe</a>
-                            <a className="nav-link" href="#">LTC-20</a>
+                            <a className="nav-link" href="#"><FaPencilAlt />Inscribe</a>
+                            <a className="nav-link" href="#"><PiBracketsCurlyBold />LTC-20</a>
                         </div>
                     </div>
                 </div>
