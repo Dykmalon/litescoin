@@ -125,6 +125,12 @@ export default function Home() {
             </div>
 
           </div>
+
+          <div className='footer'>
+            <div>litescribe</div>
+            <div>All rights reserved</div>
+
+          </div>
         </div>
       </main>
     </>

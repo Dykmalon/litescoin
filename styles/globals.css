@@ -439,6 +439,15 @@ a {
 
 }
 
+.footer{
+  display: flex;
+  justify-content: space-between;
+  color: #828282;
+  margin-top: 3em;
+  font-size: 1em;
+  padding-bottom: 15px;
+}
+
 /* mobile */
 
 @media screen and (max-width: 768px) {
